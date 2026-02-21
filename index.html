@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilver Manuel Yena Garcia – Analista BI</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="main-nav">
+        <button class="active" onclick="showPage('sobre', this)">Sobre Mi</button>
+        <button onclick="showPage('habilidades', this)">Habilidades</button>
+        <button onclick="showPage('proyectos', this)">Proyectos</button>
+        <button onclick="showPage('contactos', this)">Contactos</button>
+    </nav>
+
+    <!-- ══════════════════════════════
+         PAGE: SOBRE MI
+    ══════════════════════════════ -->
+    <section id="page-sobre" class="page active gradient-bg">
+        <div class="hero-inner">
+            <div class="particles" id="particles"></div>
+            <div class="hero-left">
+                <div class="tag-pill anim anim-d1">Analista de datos &nbsp;·&nbsp; BI - Business Intelligence</div>
+                <h1 class="hero-title anim anim-d2">
+                    Convirtiendo los datos<br>en decisiones<br>empresariales
+                </h1>
+                <p class="hero-sub anim anim-d3">
+                    Hola, soy <strong>Wilver Manuel Yena Garcia</strong>. Transformo datos complejos en insights
+                    accionables que impulsan estrategias de negocios.
+                </p>
+                <div class="hero-btns anim anim-d4">
+                    <button class="btn-outline"
+                        onclick="showPage('proyectos', document.querySelectorAll('nav button')[2])">Ver
+                        Proyectos</button>
+                    <button class="btn-outline"
+                        onclick="showPage('contactos', document.querySelectorAll('nav button')[3])">Contactarme</button>
+                </div>
+            </div>
+            <div class="hero-photo anim anim-d3">
+                <img src="img/66b02243-06ce-4cc0-afec-d3eb4be75d80.png" alt="Wilver">
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         PAGE: HABILIDADES
+    ══════════════════════════════ -->
+    <section id="page-habilidades" class="page gradient-bg">
+        <div class="section-wrap">
+            <div class="section-header">
+                <p class="section-label anim anim-d1">Lo que domino</p>
+                <h2 class="section-title anim anim-d2">Habilidades &<br>Herramientas</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card anim anim-d2">
+                    <div class="skill-icon">📊</div>
+                    <div class="skill-name">Power BI</div>
+                    <div class="skill-desc">Creación de dashboards interactivos y reportes ejecutivos para la toma de
+                        decisiones.</div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-fill="92"></div>
+                    </div>
+                </div>
+                <div class="skill-card anim anim-d3">
+                    <div class="skill-icon">🗄️</div>
+                    <div class="skill-name">SQL</div>
+                    <div class="skill-desc">Consultas avanzadas, modelado de datos y optimización de bases de datos
+                        relacionales.</div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-fill="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card anim anim-d4">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-desc">Análisis de datos con Pandas, visualización con Matplotlib y automatización
+                        de procesos.</div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-fill="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card anim anim-d2">
+                    <div class="skill-icon">📈</div>
+                    <div class="skill-name">Excel Avanzado</div>
+                    <div class="skill-desc">Tablas dinámicas, fórmulas complejas, macros VBA y análisis estadístico.
+                    </div>
+                    <div class="skill-bar-bg">
+                        <div class="skill-bar-fill" data-fill="95"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         PAGE: PROYECTOS
+    ══════════════════════════════ -->
+    <section id="page-proyectos" class="page gradient-bg">
+        <div class="section-wrap">
+            <div class="section-header">
+                <p class="section-label anim anim-d1">Mi trabajo</p>
+                <h2 class="section-title anim anim-d2">Proyectos<br>Destacados</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card anim anim-d2">
+                    <div class="project-thumb">
+                        <img src="img/Screenshot 2026-02-21 143314.png" alt="dashboards_starbucks">
+                    </div>
+                    <div class="project-body">
+                        <p class="project-tag">Power BI · Python</p>
+                        <h3 class="project-name">Repores de ventas de starbucks</h3>
+                        <p class="project-desc">Limpieza y normalización de datos usando Python.
+                            Análisis enfocado en el año 2025, generando un reporte de ventas.
+                            Creación de un KPI de tiempo de preparación, donde identifiqué que los productos con una
+                            demora menor a 10 minutos presentan un mejor rendimiento.
+
+                            📊 Hallazgos:
+                            La data abarca de enero a abril, siendo abril el mes con menor volumen de ventas.
+                            Visualización de insights en Power BI, utilizando métricas como meses y tiempo de
+                            preparación para una mejor interpretación de los datos.</p>
+                        <a href="https://app.powerbi.com/reportEmbed?reportId=c74c62bf-6407-4cd3-adf9-ae7cd0a2c5d4&autoAuth=true&ctid=9156d3bf-d39d-42cb-abf6-b7deca4a0892"
+                            class="project-link" target="_blank">Ver proyecto →</a>
+                    </div>
+                </div>
+                <div class="project-card anim anim-d3">
+                    <div class="project-thumb">
+                        <img src="img/image.png" alt="dashboards_kpi">
+                    </div>
+                    <div class="project-body">
+                        <p class="project-tag">SQL - Power Bi</p>
+                        <h3 class="project-name">Análisis KPI</h3>
+                        <p class="project-desc">📊 Análisis KPI de Satisfacción Laboral — Datos RD 🇩🇴
+                            En este proyecto desarrollé un KPI de satisfacción de empleados por sede, utilizando datos
+                            recopilados en la República Dominicana durante el año actual.
+                            El análisis se basa en las encuestas internas aplicadas al personal, considerando tanto a
+                            quienes completaron el formulario como a quienes no lo hicieron,
+                            con el fin de obtener una visión más real y completa sobre la participación y el compromiso
+                            de los equipos.</p>
+                        <a href="https://app.powerbi.com/reportEmbed?reportId=9f6bb5d8-68d1-482a-985e-9c95541a7980&autoAuth=true&ctid=9156d3bf-d39d-42cb-abf6-b7deca4a0892"
+                            class="project-link" target="_blank">Ver proyecto →</a>
+                    </div>
+                </div>
+                <div class="project-card anim anim-d4">
+                    <div class="project-thumb"><img src="img/image copy.png" alt="dashboards_ambiental"></div>
+                    <div class="project-body">
+                        <p class="project-tag">Power Bi · Python</p>
+                        <h3 class="project-name">Analisis de cuidado ambiental</h3>
+                        <p class="project-desc">🌱 Dashboard sobre Plantaciones de Especies para la Protección del Medio
+                            Ambiente en República Dominicana (2017–2025) 🇩🇴
+                            No recordaba lo entretenido que era crear dashboards como este. Disfruté mucho el proceso de
+                            diseño y visualización, organizando los datos de manera clara y atractiva para mostrar el
+                            impacto de las plantaciones a lo largo de los años.
+                            Me encanta cómo herramientas como Power BI nos permiten transformar datos en historias
+                            visuales que inspiran y comunican con solo una mirada.</p>
+                        <a href="https://app.powerbi.com/reportEmbed?reportId=d9fa42d2-7694-4982-ac77-fbbffa76edb8&autoAuth=true&ctid=9156d3bf-d39d-42cb-abf6-b7deca4a0892"
+                            class="project-link" target="_blank">Ver proyecto →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         PAGE: CONTACTOS  (igual al original)
+    ══════════════════════════════ -->
+    <section id="page-contactos" class="page gradient-bg">
+        <div class="section-wrap">
+            <div class="contact-grid">
+
+                <!-- LADO IZQUIERDO -->
+                <div class="contact-left">
+                    <p class="section-label anim anim-d1">
+                        ¿Tienes vacantes disponibles para mi?
+                    </p>
+
+                    <h2 class="big-text anim anim-d2">
+                        ¿Encajo en tu búsqueda?<br>Contáctame.
+                    </h2>
+
+                    <p class="anim anim-d3">
+                        Estoy disponible para proyectos freelance, consultoría en BI o posiciones
+                        full-time. No dudes en escribirme.
+                    </p>
+
+                    <div class="contact-item anim anim-d3">
+                        <div class="contact-icon">📩</div>
+                        <div class="contact-detail">
+                            wilbertmllenasgarcia@gmail.com
+                            <span>Email</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item anim anim-d4">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-detail">
+                            www.linkedin.com/in/wilver-m-yena-garcia-9350a22a8
+                            <span>LinkedIn</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item anim anim-d5">
+                        <div class="contact-icon">👀</div>
+                        <div class="contact-detail">
+                            https://github.com/Wyena2111
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">¡Mensaje enviado con éxito! 🎉</div>
+
+    <script src="Main.js"></script>
+
+</body>
+</html>
