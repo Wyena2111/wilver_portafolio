@@ -53,5 +53,5 @@ function sendMsg() {
   setTimeout(() => toast.classList.remove('show'), 3500);
 }
 
-// Init: show first page
+// Init: show
 setTimeout(() => document.getElementById('page-sobre').classList.add('visible'), 20);
