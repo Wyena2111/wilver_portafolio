@@ -28,7 +28,7 @@ function animateBars() {
   });
 }
 
-// ─── PARTICLES ───
+// ─── PARTICLES ───s
 (function createParticles() {
   const container = document.getElementById('particles');
   for (let i = 0; i < 22; i++) {
@@ -53,5 +53,5 @@ function sendMsg() {
   setTimeout(() => toast.classList.remove('show'), 3500);
 }
 
-// Init: show
+// Init: show first page
 setTimeout(() => document.getElementById('page-sobre').classList.add('visible'), 20);
